@@ -16,6 +16,7 @@ public class App {
     			 .addService(new ChatServiceImpl())
     			 .build();
     	    server.start();
+    	    System.out.println("Server started on port: "+ server.getPort());
     	    server.awaitTermination();
     }
 }
